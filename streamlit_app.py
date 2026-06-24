@@ -4,9 +4,7 @@ from PIL import Image
 import plotly.graph_objects as go
 
 # Keras 3 standalone — sans dépendance TensorFlow directe
-import os
-os.environ["KERAS_BACKEND"] = "numpy"  # backend léger pour inférence
-import keras
+import tensorflow as tf
 
 MODEL_PATH = "asl_mobilenetv2.h5"
 
@@ -63,7 +61,7 @@ st.markdown("""
 @st.cache_resource(show_spinner="Chargement du modèle…")
 def load_model():
     try:
-        model = keras.saving.load_model(MODEL_PATH)
+        model = tf.keras.models.load_model(MODEL_PATH)
         return model, None
     except Exception as e:
         return None, str(e)
