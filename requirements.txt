@@ -1,5 +1,11 @@
-tensorflow
-streamlit
-numpy
-pillow
-h5py
+# Core ML
+tensorflow==2.15.0
+numpy==1.26.4
+h5py==3.11.0
+
+# Image
+Pillow==10.3.0
+
+# Interface
+streamlit==1.35.0
+plotly==5.22.0
