@@ -94,7 +94,7 @@ if uploaded_file is not None:
 
     with col1:
         st.subheader("Image")
-        st.image(image, use_container_width=True)
+        st.image(image)
         st.caption(f"Dimensions : {image.width} × {image.height} px  |  Mode : {image.mode}")
 
     with st.spinner("Analyse en cours…"):
