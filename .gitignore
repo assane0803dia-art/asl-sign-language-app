@@ -1,0 +1,15 @@
+# Environnements virtuels
+.venv/
+.venv311/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Windows
+Thumbs.db
+desktop.ini
