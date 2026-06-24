@@ -1,5 +1,5 @@
-# Core ML
-tensorflow==2.15.0
+# Core ML — compatible Python 3.11
+tensorflow==2.15.1
 numpy==1.26.4
 h5py==3.11.0
 
